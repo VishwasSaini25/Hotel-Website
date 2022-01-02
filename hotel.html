@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="home.png">
+	<link rel="stylesheet" type="text/css" href="hotel.css">
+	<script src="https://kit.fontawesome.com/dbed6b6114.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+	<meta name="description" content="Hotel Website Project">
+	<meta name="keywords" content="HTML,CSS,JavaScript,github">
+	<meta name="author" content="Vishwas Saini">
+	<title>HOTEL HP</title>
+</head>
+<body>
+	<!-- START HEADER -->
+	<header class="header" id="header">
+		<div class="">
+			<div class="head-top">
+				<div class="site-name">
+					<span>KING</span>
+				</div>
+				<div class="site-nav">
+					<span id="nav-btn">MENU<i class="fas fa-bars"></i></span>
+				</div>
+		</div>
+		<div class="head-bottom flex">
+			<h1>NICE AND COMFORTABLE PLACE TO STAY</h1>
+			<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+			<strong><button type="button" class="head-btn">GET STARTED</button></strong>
+		</div>
+	</header>
+	<!-- END OF HEADER -->
+
+
+	<!-- SIDE NAV BARS -->
+	<div class="sidenav" id="sidenav">
+		<span class="cancel-btn" id="cancel-btn">
+			<i class="fas fa-times"></i>
+		</span>
+		<ul class="navbar">
+			<li><a href="#header">home</a></li>
+				<li><a href="#header">services</a></li>
+					<li><a href="#header">rooms</a></li>
+						<li><a href="#header">customers</a></li>
+		</ul>
+		<button class="btn signup">Sign up</button>
+		<button class="btn login">Log in</button>
+	</div>
+	<!-- END SIDE NAV BARS -->
+	
+
+	<!-- FullScreen Modals -->
+	<div id="modals"></div>
+	<!-- End FullScreen Modals -->
+
+
+	<!-- Body Content -->
+	<section class="services sec-width" id="services">
+		<div class="title">
+			<h2>services</h2>
+		</div>
+		<div class="services-cnt">
+			<!-- single services -->
+			<article class="service">
+				<div class="service-icon">
+				<span><i class="fas fa-utensils"></i></span>
+				</div>
+				<div class="service-content">
+				<h2>Food Service/Food Runner</h2>
+				<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+				<button type="button" class="btn">Know More</button>
+				</div>
+			</article>
+			<!-- end of single service -->
+			<!-- single services -->
+			<article class="service">
+				<div class="service-icon">
+				<span><i class="fas fa-swimming-pool"></i></span>
+				</div>
+				<div class="service-content">
+				<h2>Refreshment</h2>
+				<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+				<button type="button" class="btn">Know More</button>
+				</div>
+			</article>
+			<!-- single services -->
+			<article class="service">
+				<div class="service-icon">
+				<span><i class="fas fa-broom"></i></span>
+				</div>
+				<div class="service-content">
+				<h2>House Keeping</h2>
+				<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+				<button type="button" class="btn">Know More</button>
+				</div>
+			</article>
+			<!-- single services -->
+			<article class="service">
+				<div class="service-icon">
+				<span><i class="fas fa-door-closed"></i></span>
+				</div>
+				<div class="service-content">
+				<h2>Room Security</h2>
+				<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+				<button type="button" class="btn">Know More</button>
+				</div>
+			</article>
+			<!-- end of single service -->
+		</div>
+	</section>
+
+	<div class="book">
+		<form class="book-form">
+			<div class="form-item">
+				<label for="checkin-date">Check In Date: </label>
+					<input type="Date" name="checkin-date">
+			</div>
+			<div class="form-item">
+				<label for="checkout-date">Check Out Date: </label>
+					<input type="Date" name="checkout-date">
+			</div>
+			<div class="form-item">
+				<label for="adult">Adult: </label>
+				<input type="number" min="1" value="1"  id="adult"> 
+			</div>
+			<div class="form-item">
+				<label for="children">Children: </label>
+				<input type="number" min="1" value="1"  id="children"> 
+			</div>
+			<div class="form-item">
+				<label for="rooms">Rooms: </label>
+				<input type="number" min="1" value="1"  id="rooms"> 
+			</div>
+			<div class="form-item">
+				<input type="submit" class="btn" value="Book Now"  id="rooms"> 
+			</div>
+		</form>
+	</div>
+
+	<section class="rooms-sec-width" id="rooms">
+		<div class="title-rooms">
+			<h2>rooms</h2>
+		</div>
+		<div class="room-container">
+			<!-- single room -->
+			<article class="room" >
+				<div class="room-image">
+					<img src="rooom1.jpg" alt="room image" >
+				</div>
+				<div class="room-text">
+					<h3>Luxury Rooms</h3>
+					<ul>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+					</ul>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p class="rate">
+						<span>$99.00 /</span> Per Night
+					</p>
+					<button type="button" class="btn">Book Now</button>
+				</div>
+			</article>
+			</article>
+			<!-- end single room -->
+			<!-- single room -->
+			<article class="room" >
+				<div class="room-image">
+					<img src="rooom2.jpg" alt="room image" >
+				</div>
+				<div class="room-text">
+					<h3>Luxury Rooms</h3>
+					<ul>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+					</ul>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p class="rate">
+						<span>$99.00 /</span> Per Night
+					</p>
+					<button type="button" class="btn">Book Now</button>
+				</div>
+			</article>
+			</article>
+			<!-- end single room -->
+			<!-- single room -->
+			<article class="room" >
+				<div class="room-image">
+					<img src="rooom3.jpg" alt="room image" >
+				</div>
+				<div class="room-text">
+					<h3>Luxury Rooms</h3>
+					<ul>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+						<li>
+							<i class="fas fa-arrow-alt-circle-right"></i>
+							Lorem ipsim color dolor rimit
+						</li>
+					</ul>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+					<p class="rate">
+						<span>$99.00 /</span> Per Night
+					</p>
+					<button type="button" class="btn">Book Now</button>
+				</div>
+			</article>
+			</article>
+			<!-- end single room -->
+	</section>
+
+
+	<section class="customers" id="customers">
+		<div class="sec-width">
+			<div class="title-customer">
+				<h2>Customers</h2>
+			</div>
+			<div class="customers-containers">
+				<!-- single customers -->
+					<div class="customer">
+						<div class="rating">
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="far fa-star"></i></span>
+							<h3>We Loved It</h3>
+							<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+							<img src="customer.jfif" alt="customer image">
+							<span>Alex, North America</span>
+						</div>
+					</div>
+				<!-- end single customers -->
+				<!-- single customers -->
+					<div class="customer">
+						<div class="rating">
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="far fa-star"></i></span>
+							<h3>Comfortable Living</h3>
+							<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+							<img src="customer1.jfif" alt="customer image">
+							<span>Sumit, India</span>
+						</div>
+					</div>
+				<!-- end single customers -->
+				<!-- single customers -->
+					<div class="customer">
+						<div class="rating">
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="fas fa-star"></i></span>
+							<span><i class="far fa-star"></i></span>
+							<h3>Nice Place</h3>
+							<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+							<img src="custome2.jfif" alt="customer image">
+							<span>Putin, Russia</span>
+						</div>
+					</div>
+				<!-- end single customers -->
+		</div>
+	</section>
+	<!-- End Of Body Content -->
+
+	<!-- footer -->
+ 	<footer class="footer">
+ 		<div class="footer-container">
+ 			<div>
+ 				<h2>About Us</h2>
+ 				<p>Amazing place to spend holidays and have fun.Beah side view and full of facilites- free wifi,free breakfast,personal pool and near by shops.Amazing place to spend holidays.</p>
+ 				<ul class="social-icons">
+ 					<li class="flex">
+ 						<i class="fa fa-twitter fa-2x"></i>
+ 					</li>
+ 					<li class="flex">
+ 						<i class="fa fa-facebook fa-2x"></i>
+ 					</li>
+ 					<li class="flex">
+ 						<i class="fa fa-instagram fa-2x"></i>
+ 					</li>
+ 				</ul>
+ 			</div>
+ 			<div>
+ 				<h2>Useful Links</h2>
+ 				<a href="#">Blog</a>
+ 				<a href="#">Rooms</a>
+ 				<a href="#">Subscription</a>
+ 				<a href="#">Gift Card</a>
+ 			</div>
+ 			<div>
+ 				<h2>Privacy</h2>
+ 				<a href="#">Career</a>
+ 				<a href="#">About Us</a>
+ 				<a href="#">Contact US</a>
+ 				<a href="#">Services</a>
+ 			</div>
+ 			<div>
+ 				<h2>Have A Question?</h2>
+ 				<div class="Contact-item">
+ 					<span><i class="fas fa-map-marker-alt"></i></span>
+ 					<span>202 B-7 44/45 sector 3 rohini delhi 85,INDIA</span>
+ 				</div>
+ 				<div class="Contact-item">
+ 					<span><i class="fas fa-phone-alt"></i></span>
+ 					<span>9899453643</span>
+ 				</div>
+ 				<div class="Contact-item">
+ 					<span><i class="fas fa-envelope"></i></span>
+ 					<span>info@gmail.com</span>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</footer>
+
+	<!-- end of footer -->
+	<script type="text/javascript" src="hotel.js"></script>
+</body>
+</html>
